@@ -1,14 +1,18 @@
+# typed: true
+
 module Vehicle
   module Types
-    class CreateValidator
+    class UpdateValidator
 
       include ActiveModel::Validations
 
       attr_reader(
+        :vehicle_type_id,
         :type_name,
         :base_price
       )
 
+      validates_presence_of(:vehicle_type_id)
       validates_presence_of(:type_name)
       validates_presence_of(:base_price)
       validates_numericality_of(:base_price, greater_than: 0)
@@ -18,6 +22,7 @@ module Vehicle
       )
 
       def initialize(request:)
+        @vehicle_type_id = request.vehicle_type_id
         @type_name = request.type_name
         @base_price = request.base_price
       end
