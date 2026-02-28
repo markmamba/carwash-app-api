@@ -192,7 +192,10 @@ GEM
       bigdecimal (>= 3.0)
       ostruct (>= 0.2)
     ostruct (0.6.3)
-    pagy (9.4.0)
+    pagy (43.3.1)
+      json
+      uri
+      yaml
     panko_serializer (0.8.4)
       activesupport
       oj (> 3.11.0, < 4.0.0)
@@ -390,6 +393,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    yaml (0.4.0)
     yard (0.9.38)
     yard-sorbet (0.9.0)
       sorbet-runtime
@@ -416,7 +420,7 @@ DEPENDENCIES
   debug
   factory_bot_rails
   kamal
-  pagy (~> 9.3)
+  pagy (~> 43.3)
   panko_serializer
   pg (~> 1.1)
   puma (>= 5.0)
