@@ -1,0 +1,19 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{BASE_URL}}/vehicle/types/:vehicle_type_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  vehicle_type_id: 
+}
+
+settings {
+  encodeUrl: true
+}
