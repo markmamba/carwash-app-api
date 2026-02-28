@@ -8,18 +8,4 @@
 class Rails::Conductor::BaseController
   include GeneratedUrlHelpersModule
   include GeneratedPathHelpersModule
-
-  sig { returns(HelperProxy) }
-  def helpers; end
-
-  module HelperMethods
-    include ::ActionText::ContentHelper
-    include ::ActionText::TagHelper
-    include ::ActionController::Base::HelperMethods
-    include ::DeviseHelper
-  end
-
-  class HelperProxy < ::ActionView::Base
-    include HelperMethods
-  end
 end

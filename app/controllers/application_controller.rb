@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
 
   rescue_from(StandardError, with: :standard_error)
-  rescue_from(Errors::BaseError, with: :base_error)
+  rescue_from(BaseError, with: :base_error)
   rescue_from(ActiveRecord::RecordNotFound, with: :record_not_found)
 
   def base_error(error)

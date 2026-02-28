@@ -42,10 +42,6 @@ gem 'panko_serializer'
 # pagy pagination
 gem 'pagy', '~> 9.3'
 
-# Authentication
-gem 'devise'
-gem 'devise-jwt'
-
 # Background jobs
 gem 'sidekiq'
 

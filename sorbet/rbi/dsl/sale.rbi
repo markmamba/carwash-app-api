@@ -364,32 +364,17 @@ class Sale
     sig { params(args: T.untyped, blk: T.untyped).returns(::Staff) }
     def build_staff(*args, &blk); end
 
-    sig { params(args: T.untyped, blk: T.untyped).returns(::VehicleType) }
-    def build_vehicle_type(*args, &blk); end
-
     sig { params(args: T.untyped, blk: T.untyped).returns(::Staff) }
     def create_staff(*args, &blk); end
 
     sig { params(args: T.untyped, blk: T.untyped).returns(::Staff) }
     def create_staff!(*args, &blk); end
 
-    sig { params(args: T.untyped, blk: T.untyped).returns(::VehicleType) }
-    def create_vehicle_type(*args, &blk); end
-
-    sig { params(args: T.untyped, blk: T.untyped).returns(::VehicleType) }
-    def create_vehicle_type!(*args, &blk); end
-
     sig { returns(T.nilable(::Staff)) }
     def reload_staff; end
 
-    sig { returns(T.nilable(::VehicleType)) }
-    def reload_vehicle_type; end
-
     sig { void }
     def reset_staff; end
-
-    sig { void }
-    def reset_vehicle_type; end
 
     sig { returns(T.nilable(::Staff)) }
     def staff; end
@@ -402,18 +387,6 @@ class Sale
 
     sig { returns(T::Boolean) }
     def staff_previously_changed?; end
-
-    sig { returns(T.nilable(::VehicleType)) }
-    def vehicle_type; end
-
-    sig { params(value: T.nilable(::VehicleType)).void }
-    def vehicle_type=(value); end
-
-    sig { returns(T::Boolean) }
-    def vehicle_type_changed?; end
-
-    sig { returns(T::Boolean) }
-    def vehicle_type_previously_changed?; end
   end
 
   module GeneratedAssociationRelationMethods
