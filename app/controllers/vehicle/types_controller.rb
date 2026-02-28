@@ -1,4 +1,4 @@
-module Vehicles
+module Vehicle
   class TypesController < ApplicationController
 
     # POST /vehicles/types

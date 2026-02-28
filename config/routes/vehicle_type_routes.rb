@@ -1,6 +1,6 @@
-namespace :vehicles do
+namespace :vehicle do
   namespace :types do
-    post '', controller: '/vehicles/types', action: 'create'
-    patch ':vehicle_type_id', controller: '/vehicles/types', action: 'update'
+    post '', controller: '/vehicle/types', action: 'create'
+    patch ':vehicle_type_id', controller: '/vehicle/types', action: 'update'
   end
 end

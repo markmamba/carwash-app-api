@@ -6,14 +6,22 @@ meta {
 
 patch {
   url: {{BASE_URL}}/vehicle/types/:vehicle_type_id
-  body: none
+  body: json
   auth: inherit
 }
 
 params:path {
-  vehicle_type_id: 
+  vehicle_type_id: 1
+}
+
+body:json {
+  {
+    "type_name": "SUV",
+    "base_price": 145
+  }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
