@@ -14,7 +14,7 @@ module Vehicle
         if validator.invalid?
           raise Errors::ValidationError.new(
             messages: validator.errors.messages,
-            debug_values: { request: request },
+            request: JSON.parse(request.to_json, symbolize_names: true),
             title: 'Validation failed for vehicle type creation'
           )
         end

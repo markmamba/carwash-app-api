@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::API
 
+  include(Pagy::Backend)
+  include(PaginationHelper)
+
   rescue_from(StandardError, with: :standard_error)
   rescue_from(BaseError, with: :base_error)
   rescue_from(ActiveRecord::RecordNotFound, with: :record_not_found)
