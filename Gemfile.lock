@@ -176,10 +176,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.1-aarch64-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.19.1-arm-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.19.1-arm-linux-musl)
-      racc (~> 1.4)
     nokogiri (1.19.1-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.19.1-x86_64-darwin)
@@ -335,15 +331,15 @@ GEM
       logger (>= 1.7.0)
       rack (>= 3.2.0)
       redis-client (>= 0.26.0)
-    sorbet (0.6.12977)
-      sorbet-static (= 0.6.12977)
-    sorbet-runtime (0.6.12977)
-    sorbet-static (0.6.12977-aarch64-linux)
-    sorbet-static (0.6.12977-universal-darwin)
-    sorbet-static (0.6.12977-x86_64-linux)
-    sorbet-static-and-runtime (0.6.12977)
-      sorbet (= 0.6.12977)
-      sorbet-runtime (= 0.6.12977)
+    sorbet (0.6.12993)
+      sorbet-static (= 0.6.12993)
+    sorbet-runtime (0.6.12993)
+    sorbet-static (0.6.12993-aarch64-linux)
+    sorbet-static (0.6.12993-universal-darwin)
+    sorbet-static (0.6.12993-x86_64-linux)
+    sorbet-static-and-runtime (0.6.12993)
+      sorbet (= 0.6.12993)
+      sorbet-runtime (= 0.6.12993)
     spoom (1.7.11)
       erubi (>= 1.10.0)
       prism (>= 0.28.0)
@@ -400,8 +396,6 @@ PLATFORMS
   aarch64-linux
   aarch64-linux-gnu
   aarch64-linux-musl
-  arm-linux-gnu
-  arm-linux-musl
   arm64-darwin
   x86_64-darwin
   x86_64-linux
