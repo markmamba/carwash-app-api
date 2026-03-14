@@ -40,7 +40,7 @@ gem 'sorbet-runtime'
 gem 'panko_serializer'
 
 # pagy pagination
-gem 'pagy', '~> 9.3'
+gem 'pagy', '~> 43.3'
 
 # Background jobs
 gem 'sidekiq'
